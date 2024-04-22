@@ -1,0 +1,35 @@
+.box0{
+  display: flex;
+  width: 400px;
+}
+.item1,.item2,.item3{
+  height: 200px;
+}
+.item1{
+  width: 200px;
+  flex: 1 1 auto;
+  background-color: pink;
+}
+
+.item2{
+  width: 100px;
+  flex: 1 2 auto;
+  background-color: purple;
+}
+
+.item3{
+  width: 200px;
+  flex: 1 1 auto;
+  background-color: orange;
+}
+
+
+.box {
+  width: 400px;
+  display: flex;
+}
+
+.box>* {
+  flex: 1 1 auto;
+  border: 1px solid purple;
+}

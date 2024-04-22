@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox2</title>
+  <link rel="stylesheet" href="./styles3.css">
+  <!-- The resources come from
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis#the_flex-shrink_property
+
+  the examples are for flex-shrink test.
+  -->
+</head>
+
+<body>
+  <!-- flex-shrink essential factor 1:The flex shrink factor is multiplied by the flex base size when distributing negative space -->
+  <div class="box0">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+  </div>
+  <br>
+  <!-- flex-shrink essential factor 2:The flex items will be floored at their min-content size no matter how the flex-shink is so that they can wrap their contents -->
+  <div class="box">
+    <div>Item One</div>
+    <div>Item Two</div>
+    <div>Item Three has more content and so has a larger size</div>
+  </div>
+</body>
+
+</html>

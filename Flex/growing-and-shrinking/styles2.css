@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+}
+
+.box :first-child {
+  width: 150px;
+}
+
+
+.box>* {
+  flex: 0 0 auto;
+  border: 1px solid purple;
+}
