@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- The resources come from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions -->
+<body>
+  <form action="#" method="get">
+    <input type="text" id="textbox">
+  </form>
+  <script>
+
+    /*built-in function join*/
+    const maArr = ["I", "love", "apple"]
+    console.log(maArr.join(" "))
+    // the join() function takes an array, joins
+    // all the array items together into a single
+    // string, and returns this new string
+
+    /*built-in function random*/
+    const myNumber = Math.random();
+    // the random() function generates a random number between
+    // 0 and up to but not including 1, and returns that number
+    console.log(parseInt(myNumber * 100 + 1))// random integer  between 1(inclusive) and 100(inclusive)
+
+    /*optional parameter*/
+    console.log(maArr.join()) //function join's optional parameter is comma ,namely ","
+
+    /*default parameter*/
+    function hello(name = 'Gorge') { // default parameter.To me,default parameter and optional parameter are like one object's two sides
+      console.log(`hello! ${name}`)
+    }
+    hello()
+    hello("Natasha")
+
+    /*anonymous function,it is oftentimes used as parameter for a function*/
+    let textbox=document.getElementById("textbox")
+    // textbox.addEventListener("keydown",function(event){
+    //   console.log(`You've input key ${event.key}`)
+    // })
+
+    /*arrow function.The effect of the folling code is the same as the one above*/
+    textbox.addEventListener("keydown",(event)=>{  //since the arrow function has only parameter,we can omit the parentheses,namely event=>....
+      console.log(`You've input key ${event.key}`)
+    })
+
+    /*if your function contains only one line that's a return statement, you can also omit the braces and the return keyword and implicitly return the expression*/
+    const oringnals = [1,2,3,4]
+    const doubled = oringnals.map(item => item*2)
+    console.log(doubled) // [2,4,6,8]
+
+    
+  </script>
+</body>
+
+</html>
