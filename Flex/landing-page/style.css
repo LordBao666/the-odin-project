@@ -1,17 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /*NOTE:it helps a lot*/
+  box-sizing: border-box;
+  /*NOTE:it helps a lot*/
 }
 
-ul{
+ul {
   /*Clear ul's default css*/
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-a{
+a {
   /*Clear a's default css*/
   text-decoration: none;
   color: #000000;
@@ -25,7 +26,7 @@ a{
 }
 
 
-.header-above{
+.header-above {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +34,7 @@ a{
 }
 
 
-.header-logo{
+.header-logo {
   font-size: 24px;
   color: #F9FAF8;
 }
@@ -44,37 +45,37 @@ a{
   color: #E5E7EB;
 }
 
-.header-link{
+.header-link {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
 
-.header-content{
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-hero{
+.header-hero {
   max-width: 490px;
 }
 
-.header-hero-main{
+.header-hero-main {
   font-size: 48px;
   font-weight: 800;
   color: #F9FAF8;
 }
 
-.header-hero-secondary{
+.header-hero-secondary {
   margin-bottom: 20px;
 }
 
-.header-hero button{
+.header-hero button {
   width: 140px;
-  height:43px;
+  height: 43px;
   font-size: 18px;
   font-weight: 700;
-  color:#F9FAF8;
+  color: #F9FAF8;
   background-color: #3882F6;
   border-radius: 8px;
 }
@@ -83,6 +84,50 @@ a{
   width: 550px;
   height: 260px;
   flex: 0 0 auto;
+}
+
+/* info */
+.info {
+  height: 550px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.info h1 {
+  font-size: 39px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-bottom: 50px;
+}
+.info-content{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.info-illustration {
+  max-width: 190px;
+}
+
+.info-box {
+  width: 190px;
+  height: 190px;
+  border: 5px solid #3882F6;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.info-illustration p{
+  font-size: 18px;
+}
+
+
+
+
+
+.signUp {
+  height: 500px;
+  background-color: #e5e7eb;
+
 }
 
 
