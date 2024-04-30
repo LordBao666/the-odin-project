@@ -39,7 +39,7 @@ a {
   color: #F9FAF8;
 }
 
-.header-link,
+
 .header-hero-secondary {
   font-size: 18px;
   color: #E5E7EB;
@@ -50,6 +50,11 @@ a {
   gap: 20px;
 }
 
+.header-link a {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -58,6 +63,7 @@ a {
 
 .header-hero {
   max-width: 490px;
+  flex-shrink: 0;
 }
 
 .header-hero-main {
@@ -139,9 +145,7 @@ a {
 }
 
 .quote-container {
-  display: flex;
   max-width: 840px;
-  flex-direction: column;
 }
 
 .quote-content {
@@ -155,8 +159,7 @@ a {
   font-size: 24px;
   font-weight: 900;
   color: #1f2937;
-  align-self: flex-end;
-  /*important*/
+  text-align: right;
 }
 
 /* signUp */
