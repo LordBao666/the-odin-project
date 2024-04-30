@@ -1,5 +1,3 @@
-// console.log("Hello World")
-
 function getComputerChoice() {
   // Returns a random integer from 0 to 2:
   let randomNumber = Math.floor(Math.random() * 3);
@@ -62,12 +60,12 @@ function playGame() {
     round--;
   }
   if(humanScore===computerScore){
-    console.log(`Finally,a Draw,Your score is ${humanScore},and Computer's score is ${computerScore}`)
+    console.log(`Finally,a Draw,Your score is ${humanScore},and Computer's score is ${computerScore}`);
   }else if(humanScore> computerScore){
-    console.log(`You Win!!!,Your score is ${humanScore},and Computer's score is ${computerScore}`)
+    console.log(`You Win!!!,Your score is ${humanScore},and Computer's score is ${computerScore}`);
   }else{
     console.log(`You Lose!!!,Your score is ${humanScore},and Computer's score is ${computerScore}`);
   }
 }
 
-playGame()
+playGame();
