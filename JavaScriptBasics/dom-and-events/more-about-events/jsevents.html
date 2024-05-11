@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    Here Div
+    <p>hi how are you?
+      <a href="https://www.google.com/">visit me</a>
+    </p>
+  </div>
+  <script>
+    let link = document.querySelector('a')
+    link.addEventListener("click", event => {
+      console.log("a is being cliked")
+      console.log(event.currentTarget)
+      console.log(event.target)
+      console.log(event.eventPhase)
+      event.preventDefault(); //note here
+
+    })
+
+    let para = document.querySelector("p")
+    para.addEventListener("click", event => {
+      console.log("p is being cliked")
+      console.log(event.currentTarget)
+      console.log(event.target)
+      console.log(event.eventPhase)
+      // event.stopPropagation() //note here.
+
+    })
+
+    let div = document.querySelector("div")
+    div.addEventListener("click", event => {
+      console.log("div is being cliked")
+      console.log(event.currentTarget)
+      console.log(event.target)
+      console.log(event.eventPhase)
+  
+    })
+  </script>
+</body>
+
+</html>
