@@ -44,9 +44,10 @@ body {
   margin-bottom: 20px;
 }
 
-.console ul li:last-child{
+.console ul li:nth-last-child(2){
   margin-top: 60px;
 }
+
 .console ul button{
   width: 150px;
   height: 50px;
@@ -55,9 +56,7 @@ body {
   font-size: 20px;
 }
 
-.console ul button:hover{
-  background-color: #d7ab4c;
-}
+
 
 .defaultGrid{
   background-color: #ffffff;
