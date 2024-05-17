@@ -22,18 +22,44 @@ body {
   background-color: #ededed;
 }
 
-.container{
-  width: 500px;
-  height: 500px;
-  margin: 15px auto;
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 100px;
+}
 
+.container{
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
 }
 
 
+
+.console ul li{
+  margin-bottom: 20px;
+}
+
+.console ul li:last-child{
+  margin-top: 60px;
+}
+.console ul button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+
+  font-size: 20px;
+}
+
+.console ul button:hover{
+  background-color: #d7ab4c;
+}
+
 .defaultGrid{
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px  solid #ededed;
 }

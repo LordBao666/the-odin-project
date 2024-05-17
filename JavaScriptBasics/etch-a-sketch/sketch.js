@@ -3,7 +3,7 @@ const containerWidth = container.clientWidth;
 console.log(containerWidth)
 //the defaut number of squares in each side. 
 //e.g  16x16 implies the squareNumEachSide is  16
-const squareNumEachSide = 16; 
+const squareNumEachSide = 80; 
 
 let currentColor = "black"
 //the variable indicates if the sub elements of container  is being clicked.
