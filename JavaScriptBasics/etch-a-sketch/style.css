@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*!!!!*/
+}
+
+ul {
+  /*Clear ul's default css*/
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  /*Clear a's default css*/
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  text-align: center;/* Note that all offsprings of body will inherit this property */
+  background-color: #ededed;
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  margin: 15px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+
+.defaultGrid{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
