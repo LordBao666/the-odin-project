@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // const arr = [1, 2, 3, 4, 5];
+    //   const productOfAllNums = arr.reduce((total, currentItem) => {
+    //     return total * currentItem;
+    //   });
+    //   console.log(productOfAllNums); // Outputs 120;
+    //   console.log(arr); // Outputs [1, 2, 3, 4, 5]
+
+
+    /*Take in an array.
+      For every even number, it will triple it.
+      Then it will sum all those even numbers.*/
+    //since tripling does not alter one number's parity,we can do like this:
+    const arr = [1, 2, 3, 4, 5];
+    const res=arr.filter(ele=>ele%2===0).map(ele=>ele*3).reduce((sum,cur)=>sum+cur)
+    console.log(res)
+    console.log(arr)  
+  </script>
+</body>
+</html>
