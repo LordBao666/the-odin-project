@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <script>
+    //Object constructor
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+    Person.prototype.intro = function () {
+      return `name:${this.name},age: ${this.age}`;
+    }
+
+    function Worker(name,age,dept){
+      Person.call(this,name,age);
+      // Person(name,age); //not work
+      this.dept = dept;
+    }
+
+    Object.setPrototypeOf(Worker.prototype, Person.prototype);
+    let w1 = new Worker("jack",26,"Dev");
+    
+    console.log(w1.intro());//name:jack,age: 26
+    console.log(w1.hasOwnProperty("intro"));//false
+    console.log(Worker.prototype.hasOwnProperty("intro"));//false
+    console.log(Person.prototype.hasOwnProperty("intro"));//true
+
+    console.log(Worker.prototype.isPrototypeOf(w1));//true
+    console.log(w1 instanceof Worker);//true
+
+    for (let key in w1){
+        if(w1.hasOwnProperty(key)){
+          console.log(`Owned Prop:${key}:${w1[key]}`);
+        }else{
+          console.log(`Inherited Prop:${key}:${w1[key]}`);
+        }
+    }
+  </script>
+</body>
+
+</html>
