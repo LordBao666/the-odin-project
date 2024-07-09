@@ -19,7 +19,7 @@ const clikedBtnBackgroundColor = "#d7ab4c";
 
 //the button clicked last time,We just take blackModeBtn,eraserBtn,rainbowModeBtn into account
 let lastClickBtn = blackModeBtn;
-//the currentSquareColor ONLY applies to Black Mode abd Eraser,but not to Rainbow Mode.
+//the currentSquareColor ONLY applies to Black Mode and Eraser,but not to Rainbow Mode.
 let currentSquareColor = "black";
 let isRainBowModeOn = false;
 
