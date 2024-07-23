@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* Class Basic knowledge*/
+    class User{
+      constructor(name="john_doe"){
+        this.name = name;
+      }
+
+      sayHi(){
+        console.log(`Hi there,I'm ${this.name}`);
+      }
+    }
+
+    let user = new User("tom");
+    user.sayHi();
+    console.log(typeof User);//function
+    console.log(user);
+
+    console.log(Object.getPrototypeOf(user)===User.prototype);//true
+    console.log(User===User.prototype.constructor);//true
+    //Object.getOwnPropertyNames(obj) is like for..in loop, it will
+    //return a string array which shows the enumerable properties and methods of obj, incluing inherited ones
+    //check https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
+    console.log(Object.getOwnPropertyNames(User.prototype));//constructor sayhi
+
+    /*Getter and setter*/
+
+    let person={
+      name:"John",
+      surname:"Higgins",
+
+      get fullName(){
+        return `${this.name} ${this.surname}`
+      },
+
+      set fullName(fullName){
+        [this.name,this.surname]=fullName.split(" ");
+      }
+    }
+
+    console.log(person.fullName);//John Higgins
+    person.fullName="Ronnie O'Sullivan";
+    console.log(person.fullName);//"Ronnie O'Sullivan"
+
+
+
+  </script>
+</body>
+</html>
